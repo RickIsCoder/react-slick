@@ -226,7 +226,7 @@ var EventHandlers = {
         return true;
       });
 
-      const slidesTraversed = Math.abs(swipedSlide.dataset.index - this.state.currentSlide) || 1;
+      const slidesTraversed = swipedSlide ? Math.abs(swipedSlide.dataset.index - this.state.currentSlide) || 1 : 1;
 
       return slidesTraversed;
     } else {
